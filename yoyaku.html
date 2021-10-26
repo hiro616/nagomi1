@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reserve</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+    <div class="whole-wrapper">
+      <header class="wrapper">
+        <div class="head-wrapper">
+          <div class="header-title">
+            <h1>宿泊予約</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">トップ</a></li>
+              <li>ご予約</li>
+            </ul>
+          </nav>
+          <ul>
+            <li>空室管理のあるフォームで、送信後に空室が減算されて予約が確定します。</li>
+            <li>料金設定を行い、日付・人数に応じた料金総額を予約前に確認できます。</li>
+            <li>連泊割引・直前割引（3日以内）・早期予約割引（60日以上）が設定されています。</li>
+          </ul>
+        </div>
+      </header>
+      <main class="home">
+        <section class="main-wrapper">
+          <div class="room">
+              <form action="#" method="post">
+                <div class="rooms">
+                  <input type="radio" name="room" required >
+                  <img class="room-img" src="image/kyakusitu4.jpeg" alt="">
+                  <p>私は今ついにその下宿地というものの時が分りなです。もう今で関係者もできるだけこの学習ですたばかりのなりているたには発見解せごとくなから、あまりにもすれましですですです。金力を愛するで点もとこう今にきっとたんた。</p>
+                  <p class="price">お一人様40000円</p>
+                </div>
+                <div class="rooms">
+                  <input class="radio-room" type="radio" name="room" required>
+                  <img class="room-img" src="image/kyakusitu2.jpeg" alt="">
+                  <p>私は今ついにその下宿地というものの時が分りなです。もう今で関係者もできるだけこの学習ですたばかりのなりているたには発見解せごとくなから、あまりにもすれましですですです。金力を愛するで点もとこう今にきっとたんた。</p>
+                  <p class="price">お一人様50000円</p>
+                </div>
+                <div class="rooms">
+                  <input type="radio" name="room" required>
+                  <img class="room-img" src="image/kyakusitu3.jpeg" alt="">
+                  <p>私は今ついにその下宿地というものの時が分りなです。もう今で関係者もできるだけこの学習ですたばかりのなりているたには発見解せごとくなから、あまりにもすれましですですです。金力を愛するで点もとこう今にきっとたんた。</p>
+                  <p class="price">お一人様60000円</p>
+                </div>
+              </form>
+          </div>
+              <div class="custamer-info">
+                <form action="#" method="post">
+                  <dl>
+                    <dt>宿泊予定日</dt>
+                    <dd><input type="date" required></dd>
+                  </dl>
+                  <dl>
+                    <dt>人数</dt>
+                    <dd>
+                      <select name="num" required>
+                      <option value="">-</option>
+                      <option value="1">1人</option>
+                      <option value="2">2人</option>
+                      <option value="3">3人</option>
+                      <option value="4">4人</option>
+                      <option value="5">5人</option>
+                      </select>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>お名前</dt>
+                    <dd><input type="text" required placeholder="田中　太朗">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>メールアドレス</dt>
+                    <dd><input type="email" required placeholder="sample@gmail.com" cols="20" rows="5"></dd>
+                  </dl>
+                  <dl>
+                    <dt>電話番号</dt>
+                    <dd><input type="tel" placeholder="070-4567-8901" cols="20" rows="5" ></dd>
+                  </dl>
+                  <input class="hover" type="submit" value="送信する">
+                </form>
+              </div>
+        </section>
+      </main>
+      <footer>
+    
+      </footer>
+    </div>
+  </body>
+</html>

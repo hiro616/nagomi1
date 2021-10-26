@@ -1,0 +1,331 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "Sawarabi Mincho", serif;
+  font-weight: 500;
+}
+
+h1,h2,p {
+    margin-bottom: 16px;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    line-height: 2.4;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.head-visual,.contents {
+  margin-bottom: 70px;
+}
+
+.head-visual {
+  background-image: url(../image/gaikan.jpeg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.head-visual p {
+  color: white;
+  font-size: 40px;
+}
+
+.head-visual nav ul {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  top: 10%;
+  right: 7%;
+}
+
+.head-visual nav{
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 18px;
+  
+}
+header nav ul li a:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header .nav ul li {
+  margin-left: 20px;
+  writing-mode: vertical-rl;
+}
+
+.nav_toggle {
+	display: block;
+	position: absolute;
+	top: 5%;
+	right: 3%;
+	width: 1.75em;
+	height: 1.5em;
+	z-index: 20;
+}
+
+.nav_toggle i {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	transition: transform .5s, opacity .5s;
+}
+
+.nav_toggle i:nth-child(1) {
+	top: 0;
+}
+
+.nav_toggle i:nth-child(2) {
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.nav_toggle i:nth-child(3) {
+	bottom: 0;
+}
+
+.nav {
+	position: fixed;
+	right: -100%;
+	width: 80%;
+	padding: 5% 10%;
+	z-index: 10;
+	/*
+	opacity: 0;
+	visibility: hidden;
+*/
+	transition: 0.5s;
+
+	background:transparent;
+	height: 300px;
+}
+
+/*クリック後.showが追加*/
+.nav_toggle.show i:nth-child(1) {
+	transform: translateY(10px) rotate(-45deg);
+}
+
+.nav_toggle.show i:nth-child(2) {
+	opacity: 0;
+}
+
+.nav_toggle.show i:nth-child(3) {
+	transform: translateY(-12px) rotate(45deg);
+}
+
+
+.nav.show {
+	opacity: 1;
+	visibility: visible;
+	right: 0;
+}
+
+
+.main-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contents {
+  text-align: center;
+}
+
+.contents p {
+  margin-bottom: 70px;
+}
+
+.contents img {
+  width: 330px;
+  height: 280px;
+  margin-bottom: 30px;
+}
+
+.contact {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  background: url(../image/haikei.jpg);
+}
+
+dl dt {
+  margin-bottom: 20px;
+}
+
+dl dd {
+  margin-bottom: 20px;
+}
+
+input,select {
+  width: 25em;
+  border:1px solid rgb(216, 212, 212);
+  border-radius: 10px;
+}
+
+textarea {
+  width: 20em;
+  height: 5em;
+  border:1px solid rgb(216, 212, 212);
+  border-radius: 10px;
+
+}
+
+input[type="submit"] {
+  padding:10px 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px #a2a2a2;
+}
+
+::placeholder {
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.hover:active {
+  box-shadow: none;
+  position: relative;
+  top: 6px;
+}
+
+
+/* 此処から予約ページ */
+
+.wrapper {
+  background: url(../image/haikei2.jpg);
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgb(180, 177, 173);
+}
+
+.head-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-wrapper h1 {
+  color: rgb(100, 100, 100);
+}
+
+.head-wrapper nav ul{
+  display: flex;
+  list-style: none;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: rgb(100, 100, 100);
+}
+
+.head-wrapper ul li a {
+  color: rgb(100, 100, 100);
+}
+
+.head-wrapper ul li a:first-child::after {
+  content:">";
+  padding-left: 20px;
+}
+
+.head-wrapper ul li {
+  list-style-position: inside;
+  font-family: "游明朝", "YuMincho", serif;
+}
+
+
+.home {
+  background-image: url(../image/haikei2.jpg);
+  padding-top: 10px;
+}
+
+.room {
+  width: 100%;
+  margin-top: 30px;
+  
+}
+
+
+.rooms {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 60px;
+  margin-bottom: 50px;
+  right: 2%;
+}
+
+.price {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+} 
+
+.room-img{
+  width: 900px;
+  height: 180px;
+  margin-right: 30px;
+}
+
+.custamer-info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.custamer-info dd {
+  margin-bottom: 20px;
+}
+
+
+/* アクセス */
+
+.access-info {
+  text-align: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin-bottom:20px ;
+  margin-top: 10px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width:600px){
+  .head-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+}
